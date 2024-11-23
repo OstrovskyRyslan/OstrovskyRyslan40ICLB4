@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost', sans-serif;
+  background-color: #000;
+}
+
+.container {
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid black;
+  background-image: url('6907400.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.Aquaflow {
+  width: 119px;
+  height: 119px;
+  position: absolute;
+  left: 42px;
+  top: 31px;
+  border-radius: 50%;
+}
+
+.menu-item {
+  position: absolute;
+  top: 55px;
+  color: #00BBFF;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.title {
+  position: absolute;
+  left: 144px;
+  top: 328px;
+  color: #0687FF;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.input-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border: 1px solid #E7E2E2;
+  border-radius: 42px;
+  color: white;
+  font-size: 32px;
+  opacity: 0.5;
+  width: 250px;
+}
+
+.input-box img {
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 30px; /* Устанавливаем желаемую ширину изображения */
+  height: auto; /* Автоматически подбирается высота, чтобы сохранить пропорции */
+}
+
+.input-name {
+  left: 144px;
+  top: 574px;
+  width: 494px;
+}
+
+.input-password {
+  left: 717px;
+  top: 574px;
+  width: 494px;
+}
+
+.button {
+  position: absolute;
+  left: 575px;
+  top: 715px;
+  padding: 23px 50px;
+  background: rgba(5, 171, 255, 0.67);
+  border-radius: 23px;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+.input-box input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Эффект при фокусе на поле */
+.input-box input:focus {
+  border-color: #00BBFF; /* Цвет границы при фокусе */
+  box-shadow: 0 0 10px rgba(0, 187, 255, 0.5); /* Плавный голубой свет */
+}
+.input-box input:hover {
+  border-color: #00A7D0; /* Цвет границы при наведении */
+}
+.input-box input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.description {
+    width: 1259px;
+    height: 809px;
+    left: 93px;
+    top: 176px;
+    position: absolute;
+    color: #14E8FF;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+/* Стили для текста с отступом от левого края */
+.content {
+  display: block;  /* Делает каждый span блочным элементом */
+  margin-bottom: 5px; /* Отступ снизу между абзацами */
+  padding-left: 20px;  /* Отступ от левого края */
+  line-height: 1.4; /* Увеличивает высоту строки, чтобы текст был более разрежен */
+}
+.bullet-point::before {
+  content: "• "; /* Символ точки */
+  color: #14E8FF; /* Цвет точки */
+  font-size: 32px; /* Размер точки */
+  margin-right: 10px; /* Отступ справа */
+}
+/* Контейнер для изображений */
+.image-container {
+  display: flex; /* Для выравнивания изображений по горизонтали */
+  justify-content: center; /* Выравнивание по горизонтали (по центру) */
+  align-items: center; /* Выравнивание по вертикали по центру */
+  gap: 30px; /* Отступ между изображениями */
+  position: absolute;
+  bottom: 100px; /* Увеличиваем отступ снизу, чтобы поднять фотографии */
+  width: 100%; /* Растягиваем контейнер на всю ширину */
+}
+
+/* Стиль для изображений */
+.rounded-image {
+  border-radius: 15px; /* Закругление углов */
+  width: 600px; /* Ширина изображения */
+  height: 400px; /* Высота изображения */
+  object-fit: cover; /* Сохранение пропорций изображения */
+}
+.image-container2 {
+  display: grid; /* Используем grid для раскладки */
+  grid-template-columns: repeat(2, 1fr); /* Создаем 2 колонки с одинаковой шириной */
+  grid-gap: 20px; /* Расстояние между изображениями */
+  justify-items: center; /* Выравнивание изображений по горизонтали по центру */
+  align-items: center; /* Выравнивание изображений по вертикали по центру */
+  position: absolute;
+  bottom: 100px; /* Отступ снизу */
+  width: 100%; /* Растягиваем контейнер на всю ширину */
+}
+
+/* Стиль для изображений */
+.rounded-image2 {
+  border-radius: 15px; /* Закругление углов */
+  width: 600px; /* Ширина изображения */
+  height: 300px; /* Высота изображения */
+  object-fit: cover; /* Сохранение пропорций изображения */
+}
+.menu-item-link {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: inherit; /* Наследует цвет от родителя */
+}
